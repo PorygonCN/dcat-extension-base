@@ -1,0 +1,38 @@
+{
+    "name": "porygon/base",
+    "description": "base module for porygon",
+    "homepage": "https://github.com/porygonCN/dcat-extension-base",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "dcat-admin",
+        "extension"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Porygon\\Base\\": "src/"
+        },
+        "files": [
+            "Helpers/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "cyw",
+            "email": "1764887758@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "extra": {
+        "dcat-admin": "Porygon\\Base\\ServiceProvider",
+        "laravel": {
+            "providers": [
+                "Porygon\\Base\\ServiceProvider"
+            ]
+        }
+    }
+}
